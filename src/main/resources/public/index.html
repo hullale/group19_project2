@@ -71,7 +71,7 @@
         <tr>
             <td>
                 <table>
-                    <tr>
+                    <tr onclick="shipchange('aircraftCarrier')">
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
@@ -79,25 +79,25 @@
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                     </tr>
-                    <tr>
+                    <tr onclick="shipchange('battleship')">
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                     </tr>
-                    <tr>
+                    <tr onclick="shipchange('cruiser')">
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                     </tr>
-                    <tr>
+                    <tr onclick="shipchange('destroyer')">
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                     </tr>
-                    <tr>
+                    <tr onclick="shipchange('submarine')">
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
                         <td id="placeShip"></td>
@@ -105,6 +105,20 @@
                 </table>
             </td>
         <td>
+            <table>
+                <tr id="Row_Health">
+                    <td id="h_1"></td>
+                    <td id="h_2"></td>
+                    <td id="h_3"></td>
+                    <td id="h_4"></td>
+                    <td id="h_5"></td>
+                    <td id="h_6"></td>
+                    <td id="h_7"></td>
+                    <td id="h_8"></td>
+                    <td id="h_9"></td>
+                    <td id="h_10"></td>
+                </tr>
+            </table>
             <div id="MyBoard" class="gameBoard">
                 <table>
                     <tr id="Row_1">
@@ -232,6 +246,20 @@
         </td>
 
         <td>
+            <table>
+                <tr id="Row_Health">
+                    <td id="h_1c"></td>
+                    <td id="h_2c"></td>
+                    <td id="h_3c"></td>
+                    <td id="h_4c"></td>
+                    <td id="h_5c"></td>
+                    <td id="h_6c"></td>
+                    <td id="h_7c"></td>
+                    <td id="h_8c"></td>
+                    <td id="h_9c"></td>
+                    <td id="h_10c"></td>
+                </tr>
+            </table>
             <div id="TheirBoard" class="gameBoard">
                 <table>
                     <tr id="Row_1">
@@ -418,11 +446,12 @@
 
                     <BR>
 
-                    To begin, place all of your ships onto the board by clicking the Ship you wish to place, and then
-                    clicking the spot on your board you wish to place it at.
+                    To begin, place all of your ships onto the board by clicking the Ship you wish to
+                    place to select it, and then selecting <BR>the spot on your board you wish to place it
+                    at using the drop down menus.
                     <BR>
                     If you wish to change its orientation,
-                    just drag it in the direction you wish for it to go!
+                    select a new orientation from the dropdown menu!
 
                     <BR>
                     Now the game can begin!
@@ -506,6 +535,7 @@
         </select>
         <button type="button" onclick="scan()">Scan</button>
     </div>
+    <p id="ship_id" class="invis"></p><p id="ship_o" class="invis"></p>
  
 
 </section>
