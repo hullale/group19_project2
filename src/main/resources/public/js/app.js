@@ -137,7 +137,7 @@ displayShip(gameModel.destroyer);
 displayShip(gameModel.submarine);
 
 for (var i = 0; i < gameModel.computerMisses.length; i++) {
-   $( '#TheirBoard #' + 'C' + gameModel.computerMisses[i].Across + '_' + gameModel.computerMisses[i].Down ).css("background-color", "white");
+   $( '#TheirBoard #' + 'C' + gameModel.computerMisses[i].Across + '_' + gameModel.computerMisses[i].Down ).css("background-color", "gray");
        var hit = document.createElement("span");
        hit.innerHTML = "O";
        var place = document.getElementById('C'+gameModel.computerMisses[i].Across + '_' + gameModel.computerMisses[i].Down);
@@ -157,7 +157,7 @@ for (var i = 0; i < gameModel.computerHits.length; i++) {
 }
 
 for (var i = 0; i < gameModel.playerMisses.length; i++) {
-   $( '#MyBoard #' + gameModel.playerMisses[i].Across + '_' + gameModel.playerMisses[i].Down ).css("background-color", "white");
+   $( '#MyBoard #' + gameModel.playerMisses[i].Across + '_' + gameModel.playerMisses[i].Down ).css("background-color", "gray");
       var hit = document.createElement("span");
              hit.innerHTML = "O";
              var place = document.getElementById(gameModel.playerMisses[i].Across + '_' + gameModel.playerMisses[i].Down );
